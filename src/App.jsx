@@ -33,8 +33,8 @@ class App extends React.Component{
         <li>Past Tense Verb<input type="text" id="past2" onChange={e => this.setState({past2: e.target.value})} /> </li>
         <li>Past Tense Verb<input type="text" id="past3" onChange={e => this.setState({past3: e.target.value})} /> </li>
 
-        <li>Adverb <input type="text" id="adverb" onChange={e => this.setState({adverb: e.target.value})} /> </li>
-        <li>Past Tense Verb<input type="text" id="past" onChange={e => this.setState({past: e.target.value})} /> </li>
+        <li>Place <input type="text" id="place" onChange={e => this.setState({place: e.target.value})} /> </li>
+        <li>Verb<input type="text" id="verb" onChange={e => this.setState({verb: e.target.value})} /> </li>
       </ol>
         
       <button onClick={e => this.onSubmit()}>Let's Lib!</button>
@@ -51,9 +51,9 @@ class App extends React.Component{
       I wish it had been more {this.state.adjective3}, but we {this.state.past} <br></br> 
       anyway. We also went on a(n) {this.state.adjective4} ride<br></br>
       called Magic {this.state.noun2}. {this.state.noun} nearly fell off a ride and <br></br>
-      had to be {this.state.past}. Later, we went to the hotel and <br></br>
-      __________(past tense verb). Next year, I want to go to __________(place),<br></br>
-      where we can ________(verb). <br></br>
+      had to be {this.state.past2}. Later, we went to the hotel and <br></br>
+      {this.state.past3} . Next year, I want to go to {this.state.place},<br></br>
+      where we can {this.state.verb}. <br></br>
 
 
       </p>
